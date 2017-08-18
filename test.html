@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+</head>
+<body>
+<div id="app">
+    {{ message }}
+</div>
+<div id="app-2">
+    <span v-bind:title="message">3214213412341234</span>
+</div>
+<div id="app-3">
+    <p v-if="seen">可以看见我</p>
+</div>
+<div id="app-4">
+    <ul>
+        <li v-for="todo in todoList">
+            {{todo.text}}
+        </li>
+    </ul>
+</div>
+<div id="app-5">
+    <p>{{message}}</p>
+    <button v-on:click="reverseMsg" type="button">click me</button>
+</div>
+<div id="app-6">
+    <p>{{message}}</p>
+    <input v-model="message">
+</div>
+<script src="https://unpkg.com/vue"></script>
+<script src="./test.js"></script>
+</body>
+</html>
